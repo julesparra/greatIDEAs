@@ -1,0 +1,77 @@
+.col-1 {width: 6.25%;}
+.col-2 {width: 12.5%;}
+.col-3 {width: 18.75%;}
+.col-4 {width: 25%;}
+.col-5 {width: 31.25%;}
+.col-6 {width: 37.5%;}
+.col-7 {width: 43.75%;}
+.col-8 {width: 50%;}
+.col-9 {width: 56.25%;}
+.col-10 {width: 62.5%;}
+.col-11 {width: 68.75%;}
+.col-12 {width: 75%;}
+.col-13 {width: 81.25%;}
+.col-14 {width: 87.5%;}
+.col-15 {width: 93.75%;}
+.col-16 {width: 100%;}
+
+*{
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 1%;
+    text-align: center;
+}
+
+.row: after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+html{
+    font-size: calc(1em + 1vw);
+    border-left: 25px solid #143D7F;
+}
+
+h2{
+  color: #2061CC;
+}
+h1, h2, h3{
+    font-family: 'Noticia Text', serif;
+    font-size: 75%;
+}
+p, li, footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 75%;
+}
+body{
+  background-color: #EDEDED;
+}
+
+#nav ul{
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #277AFF;
+}
+
+#nav li{
+    list-style-type: none;
+    float: left;
+}
+
+#nav li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav li a:hover{
+    background-color: #2061CC;
+}
